@@ -40,6 +40,10 @@ public class Heap<T extends Comparable> {
         return this.elements.size();
     }
 
+    public boolean isEmpty() {
+        return this.elements.size() == 0;
+    }
+
     public ArrayList<T> getAllElements() {
         return this.elements;
     }
