@@ -13,17 +13,17 @@ public class LocalMinimaSearch {
      *
      * Time Complexity - O(log n)
      *
-     * @param a - An unsorted array eg [6,5,4,3,1,4,5]
+     * @param a - An unsorted array eg [6,5,4,3,1,4]
      * @return
      */
     public static int findLocalMinima(int[] a) {
         int l = 0;
-        int u = a[a.length-1];
+        int u = a.length-1;
 
         while(l <= u) {
             int m = (l + u)/2;
             //Handle the case when m = l or m = u
-            if(m == l || m == u)
+            if(m == 0 || m == a.length-1)
                 return -1;
             if(a[m] < a[m-1] && a[m] < a[m+1]) {
                 return a[m];

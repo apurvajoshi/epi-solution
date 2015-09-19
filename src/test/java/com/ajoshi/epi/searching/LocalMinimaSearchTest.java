@@ -8,7 +8,7 @@ public class LocalMinimaSearchTest {
 
     @Test
     public void testFindLocalMinima() throws Exception {
-        int[] a = {6,5,4,3,1,4,5};
+        int[] a = {6,5,3,1,4};
         assertEquals(LocalMinimaSearch.findLocalMinima(a),1);
 
         int[] b = {6,5,4,3,2,1,0};
