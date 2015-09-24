@@ -1,12 +1,20 @@
 package com.ajoshi.epi.searching;
 
-import java.util.Arrays;
-
 /**
  * Created by ajoshi on 9/23/15.
  */
 public class KthLargest {
 
+    /**
+     *
+     * Time Complexity - O(n)
+     *
+     * @param a - array
+     * @param l - low index
+     * @param h - high index
+     * @param k - kth largest
+     * @return - kth largest element
+     */
     public static int findKthLargest(int[] a, int l, int h, int k) {
         if(k < 1 || k > a.length)
             return 0;
