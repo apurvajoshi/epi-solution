@@ -20,7 +20,7 @@ public class Permutation {
 
         for(ArrayList<Integer> subresult : subresults) {
             for(int i = 0; i <= subresult.size(); i++) {
-                ArrayList<Integer> result = (ArrayList<Integer>) subresult.clone();
+                ArrayList<Integer> result = new ArrayList<Integer>(subresult);
                 result.add(i,element);
                 results.add(result);
             }

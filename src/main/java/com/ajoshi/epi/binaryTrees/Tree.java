@@ -6,10 +6,10 @@ import java.util.ArrayList;
  * Created by ajoshi on 8/21/15.
  */
 public class Tree<T> {
-    T data;
-    Tree<T> left;
-    Tree<T> right;
-    Tree<T> parent;
+    public T data;
+    public Tree<T> left;
+    public Tree<T> right;
+    public Tree<T> parent;
 
 
     public Tree() {}
