@@ -1,9 +1,6 @@
 package com.ajoshi.epi.graph;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.PriorityQueue;
+import java.util.*;
 
 /**
  * Created by ajoshi on 9/26/15.
@@ -46,7 +43,7 @@ public class TransformString {
 
     private static boolean bfsTraversal(Graph<String> g, String from, String to) {
         HashSet<String> discovered = new HashSet<String>();
-        PriorityQueue<String> queue = new PriorityQueue<String>();
+        Queue<String> queue = new LinkedList<String>();
         HashMap<String, String> parent = new HashMap<String, String>();
         discovered.add(from);
         queue.add(from);

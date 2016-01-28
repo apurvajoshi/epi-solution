@@ -41,5 +41,7 @@ public class Tree<T> {
             level++;
         }
 
+        System.out.println();
+
     }
 }

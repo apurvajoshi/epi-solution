@@ -7,6 +7,14 @@ package com.ajoshi.epi.arraysAndStrings;
  */
 public class BigIntegerMultiplication {
 
+    /**
+     *
+     * This solution will overflow when s1 and s2 are large
+     *
+     * @param s1
+     * @param s2
+     * @return
+     */
     public static int product(String s1, String s2) {
         int result = 0;
         int isNegative = 1;

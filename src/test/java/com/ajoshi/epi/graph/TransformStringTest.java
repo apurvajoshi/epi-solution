@@ -11,7 +11,7 @@ public class TransformStringTest {
         String[] dictionary = {"dog","pog","log","dol","dad","mad","bur","dug","mod","cod","cud","san","dom","sar","lur",
                 "car","lug","cur","cag","dod","rag"};
 
-        System.out.println(TransformString.tranform("dug","car",dictionary));
+        System.out.println(TransformString.tranform("dog","car",dictionary));
 
     }
 }

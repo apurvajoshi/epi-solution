@@ -10,6 +10,14 @@ public class CheckSymmetry {
         return compareSymmetry(root.left, root.right);
     }
 
+    /**
+     *
+     * Time complexity - O(n)
+     *
+     * @param t1
+     * @param t2
+     * @return
+     */
     private static boolean compareSymmetry(Tree t1, Tree t2) {
         if(t1 == null && t2 == null)
             return true;

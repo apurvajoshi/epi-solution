@@ -7,6 +7,15 @@ public class LCS {
 
     private static int[][]m;
 
+    /**
+     * Time Complexity - O(m*n)
+     * Space Complexity - O(m*n)
+     *
+     * @param s1
+     * @param s2
+     * @return
+     */
+
     public static int findLCS(String s1, String s2) {
         m = new int[s1.length()+1][s2.length()+1];
 

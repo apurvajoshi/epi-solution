@@ -34,4 +34,15 @@ public class MaxSubArray {
         System.out.println("high index = " + pair.high);
         System.out.println("Max subarray = " + max_sum);
     }
+
+    public static void findMaxSubArray(int[] a) {
+        int max_sum_ending_here = a[0];
+        int max_sum_so_far = a[0];
+
+        for(int i = 1; i < a.length; i++) {
+            max_sum_ending_here = Math.max(max_sum_ending_here + a[i], a[i]);
+            max_sum_so_far = Math.max(max_sum_so_far, max_sum_ending_here);
+        }
+        System.out.println("Max sum is = " + max_sum_so_far);
+    }
 }
